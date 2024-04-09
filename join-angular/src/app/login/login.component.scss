@@ -1,12 +1,40 @@
-.header {
-    display: flex;
-    justify-content: space-between;
-    div {
-        display: flex;
-        align-items: center;
-        gap: 35px;
-    }
-    img {
+:root {
+  --babyblue: #4589ff;
+}
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 64px;
+  div {
+    display: flex;
+    align-items: baseline;
+    gap: 35px;
+  }
+}
+
+.log-in {
+  .border-bottom {
+    border-bottom: 3px solid #4589ff;
+  }
+
+  .header-login {
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-fields {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .remember-checkbox {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    input {
+        cursor: pointer;
     }
+  }
 }
