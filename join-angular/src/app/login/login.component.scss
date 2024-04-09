@@ -5,19 +5,45 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 64px;
+  margin: 64px 64px 32px;
   div {
     display: flex;
     align-items: baseline;
     gap: 35px;
   }
+  button {
+    border-radius: 8px;
+    border: none;
+    background-color: #4589ff;
+    width: 112px;
+    height: 48px;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 23px;
+  }
+
+  button:hover {
+    background-color: #2371f7;
+  }
+}
+
+.mid-container {
+  display: flex;
+  justify-content: center;
 }
 
 .log-in {
+  width: 652px;
+  max-height: 500px;
   border-radius: 30px;
-  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.2);
   .border-bottom {
+    font-weight: 700;
+    font-size: 48px;
     border-bottom: 3px solid #4589ff;
+    padding-bottom: 8px;
+    margin: 48px 0;
   }
 
   .header-login {
@@ -28,14 +54,61 @@
   .input-fields {
     display: flex;
     justify-content: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 32px;
+
+    .email {
+      width: 422px;
+      height: 48px;
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      border-bottom: 1px solid #d1d1d1;
+      outline: 0 none;
+    }
+    .email::placeholder {
+      font-size: 19px;
+      font-weight: 400;
+      color: #d1d1d1;
+      width: 49px;
+      height: 23px;
+      width: 422px;
+      outline: 0 none;
+    }
+
+    .password {
+      width: 422px;
+      height: 48px;
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      border-bottom: 1px solid #d1d1d1;
+      outline: 0 none;
+    }
+    .password::placeholder {
+      font-size: 19px;
+      font-weight: 400;
+      color: #d1d1d1;
+      width: 49px;
+      height: 23px;
+      width: 422px;
+    }
   }
 
   .remember-checkbox {
     display: flex;
     justify-content: center;
-    cursor: pointer;
+    align-items: center;
+    margin-bottom: 16px;
     input {
+      cursor: pointer;
+      height: 16px;
+      width: 16px;
+    }
+
+    p {
       cursor: pointer;
     }
   }
@@ -45,6 +118,7 @@
   display: flex;
   justify-content: center;
   gap: 35px;
+
   .log-in-btn {
     background-color: #4589ff;
     width: 135px;
@@ -55,16 +129,41 @@
     color: white;
     font-weight: 400;
     font-size: 23px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  .log-in-btn:hover {
+    background-color: #2371f7;
   }
   .guest-log-in-btn {
     width: 197px;
     height: 48px;
     border-radius: 8px;
-    padding: 10px 35px;
     border: 1px solid #647188;
     background-color: white;
     font-weight: 400;
     font-size: 23px;
     color: #647188;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .guest-log-in-btn:hover {
+    background-color: rgb(228, 225, 225);
+  }
+}
+
+.footer {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  p {
+    cursor: pointer;
   }
 }
