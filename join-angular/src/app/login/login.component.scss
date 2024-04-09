@@ -102,6 +102,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 16px;
+    gap: 8px;
     input {
       cursor: pointer;
       height: 16px;
@@ -165,5 +166,32 @@
   margin-top: 40px;
   p {
     cursor: pointer;
+  }
+
+  p:hover {
+    text-decoration: underline;
+  }
+}
+
+// responsiveness
+@media screen and (max-width: 680px) {
+  .log-in {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .log-in {
+    width: 500px;
+  }
+}
+
+// Beginning of mobile section
+@media screen and (max-width: 530px) {
+  .header {
+    margin: 32px 32px 64px;
+    div {
+      display: none;
+    }
   }
 }
