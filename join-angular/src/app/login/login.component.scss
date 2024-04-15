@@ -26,6 +26,10 @@
   button:hover {
     background-color: #2371f7;
   }
+
+  img {
+    cursor: pointer;
+  }
 }
 
 .mid-container {
@@ -173,6 +177,10 @@
   }
 }
 
+.d-none {
+  display: none;
+}
+
 // responsiveness
 @media screen and (max-width: 680px) {
   .log-in {
@@ -189,9 +197,112 @@
 // Beginning of mobile section
 @media screen and (max-width: 530px) {
   .header {
-    margin: 32px 32px 64px;
+    margin: 32px;
     div {
       display: none;
     }
+    img {
+      width: 64px;
+      height: 78px;
+    }
+  }
+
+  .d-none {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin-top: 32px;
+    button {
+      border-radius: 8px;
+      border: none;
+      background-color: #4589ff;
+      width: 112px;
+      height: 48px;
+      color: white;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 23px;
+    }
+    button:hover {
+      background-color: #2371f7;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .log-in {
+    width: 420px;
+  }
+
+  .email,
+  .password {
+    width: 320px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .log-in {
+    width: 360px;
+  }
+
+  .login-btns,
+  .guest-log-in-btn {
+    gap: 8px;
+  }
+
+  .guest-log-in-btn {
+    width: 148px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .log-in {
+    width: 340px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .log-in {
+    width: 300px;
+  }
+
+  .email,
+  .password {
+    width: 280px !important;
+  }
+
+  .guest-log-in-btn {
+    width: 124px !important;
+  }
+
+  .guest-log-in-btn,
+  .log-in-btn {
+    font-size: 18px !important;
+  }
+
+  .log-in-btn {
+    display: inline !important;
+    width: 120px !important;
+  }
+
+  .login-btns {
+    gap: 16px;
+  }
+
+  .d-none {
+    button {
+      font-size: 18px;
+    }
+  }
+
+  .password,
+  .email {
+    width: 260px !important;
+  }
+}
+
+@media screen and (max-height: 820px) {
+  .header {
+    margin: 32px;
   }
 }
